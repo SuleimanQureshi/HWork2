@@ -16,39 +16,39 @@ const CountriesCarousel = () => {
 
   const visaOptions: VisaOption[] = [
     {
-      title: 'Corporate Immigration',
-      description: 'End-to-end immigration support for companies hiring international talent, ensuring fast, compliant, and stress-free workforce relocation to Italy.',
+      title: 'Corporate Immigration & Relocation',
+      description: 'Moving people, growing businesses; your partner in global mobility.',
       sectionId: 'corporate-immigration',
       slug: 'corporate-immigration',
-      image: '/Pictures for MP/corporateimigrationservice.jpg?w=600&q=80',
+      image: '/3.jpg?w=600&q=80',
     },
     {
       title: 'Visa and Citizenship Assistance',
-      description: 'Comprehensive guidance for individuals seeking Italian visas or citizenship, managing every legal and administrative step with clarity and precision.',
+      description: 'Your road to Italy: visa and citizenship services.',
       sectionId: 'visa-citizenship-assistance',
       slug: 'visa-citizenship',
-      image: '/Pictures for MP/visaandcitizenshipservice.jpg?w=600&q=80',
+      image: '/14.jpg?w=600&q=80',
     },
     {
       title: 'Document Procurement & Ancestry Research',
-      description: 'Efficient retrieval of official Italian records and genealogical documents for legal, citizenship, or heritage purposes.',
+      description: 'Your family history, our services: documents and genealogy research.',
       sectionId: 'document-procurement-ancestry',
       slug: 'document-procurement',
-      image: 'new_document.jpeg?w=600&q=80',
+      image: '/40.jpg?w=600&q=80',
     },
     {
-      title: 'Real Estate Services',
-      description: 'Full-service support for buying, leasing, or investing in Italian property, simplifying legal, regulatory, and transaction processes for local and international clients.',
+      title: 'Real estate services.',
+      description: 'Make Italy yours: trusted real estate guidance.',
       sectionId: 'real-estate-services',
       slug: 'real-estate',
-      image: 'propertysearch.jpg?w=600&q=80',
+      image: '/49.jpg?w=600&q=80',
     },
     {
       title: 'International Taxation',
-      description: 'Strategic tax planning and compliance services for corporations and individuals navigating cross-border financial landscapes.',
+      description: 'Global taxes, local expertise',
       sectionId: 'international-taxation',
       slug: 'international-taxation',
-      image: 'new_other_services.jpeg?w=600&q=80',
+      image: '/27.jpg?w=600&q=80',
     },
   ];
 

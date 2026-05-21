@@ -1,4 +1,3 @@
-import { HeroSection } from '../components/HeroSection';
 import AboutUs from '../components/AboutUs';
 import ServicesSection from '../components/ServicesSection';
 import WhyChooseSection from '../components/WhyChooseSection';
@@ -20,7 +19,6 @@ import ExpertiseCards from '../components/ExpertiseCards';
 export default function HomePage() {
     return (
         <>
-            {/* <HeroSection /> */}
             <NewHeroSection />
             <AboutUs />
             <ExpertiseCards />

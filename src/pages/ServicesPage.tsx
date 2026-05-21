@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { HeroSection } from '../components/HeroSection';
 import BookingForm from '../components/BookingForm';
 import WhyChooseUs from '../components/WhyChooseUs';
 import { serviceCategories, SubService } from '../data/serviceCategories';
@@ -47,7 +46,6 @@ function SubServiceCard({
 export default function ServicesPage() {
     return (
         <>
-            <HeroSection />
             <div className="min-h-screen bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 py-8">
                     <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Services</h1>

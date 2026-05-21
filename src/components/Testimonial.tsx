@@ -107,12 +107,12 @@ export default function Testimonial() {
                 className="p-12"
               >
                 <div className="flex flex-col h-full">
-                  <p style={{ color: '#FFFFFF', fontSize: '48px' }} className="font-poppins mb-6">
+                  <p style={{ color: '#000000', fontSize: '48px' }} className="font-poppins mb-6">
                     "
                   </p>
 
                   <p
-                    style={{ color: '#FFFFFF' }}
+                    style={{ color: '#000000' }}
                     className="text-lg font-poppins mb-8 flex-1 leading-relaxed"
                   >
                     {testimonials[currentIndex].quote}
@@ -125,10 +125,10 @@ export default function Testimonial() {
                       className="w-16 h-16 rounded-full object-cover"
                     />
                     <div>
-                      <p style={{ color: '#FFFFFF' }} className="font-poppins font-bold">
+                      <p style={{ color: '#000000' }} className="font-poppins font-bold">
                         {testimonials[currentIndex].name}
                       </p>
-                      <p style={{ color: '#FFFFFF' }} className="font-poppins text-sm">
+                      <p style={{ color: '#000000' }} className="font-poppins text-sm">
                         {testimonials[currentIndex].role}
                       </p>
                     </div>

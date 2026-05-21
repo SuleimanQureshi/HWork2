@@ -5,12 +5,14 @@ export interface SubService {
     full_description: string;
     icon: string;
     image: string;
+    landingImage?: string;
 }
 
 export interface ServiceCategory {
     slug: string;
     title: string;
     description: string;
+    image?: string;
     subServices: SubService[];
 }
 
@@ -18,13 +20,15 @@ export const serviceCategories: ServiceCategory[] = [
     {
         slug: 'corporate-immigration',
         title: 'Corporate Immigration & Relocation',
-        description: 'End-to-end immigration support for companies hiring international talent, ensuring fast, compliant, and stress-free workforce relocation to Italy.',
+        description: 'Moving people, growing businesses; your partner in global mobility.',
+        image: '/3.jpg',
         subServices: [
             {
                 id: 'eu-blue-card',
                 title: 'EU Blue Card',
                 icon: 'Briefcase',
-                image: '/Pictures for MP/eubluecard.jpg',
+                image: '/4.jpg',
+                landingImage: '/5.jpg',
                 short_description: 'Fast-track work authorization for highly qualified non-EU nationals to live and work in Italy.',
                 full_description: `The EU Blue Card is a residence and work permit designed to attract highly qualified professionals from outside the European Union to Italy and other EU Member States. It represents one of the most structured and advantageous pathways for companies seeking to hire international talent for specialized roles that require advanced skills and academic qualifications.
 In Italy, the EU Blue Card is regulated by national immigration law in alignment with European directives, offering a streamlined process compared to standard work permits, particularly for roles that fall outside quota-based systems.
@@ -57,7 +61,8 @@ By ensuring that each step is handled with precision and in line with current le
                 id: 'intra-company-transfer',
                 title: 'Intra-Company Transfer (ICT)',
                 icon: 'Users',
-                image: '/Pictures for MP/ict.jpg',
+                image: '/6.jpg',
+                landingImage: '/7.jpg',
                 short_description: 'Seamless relocation of managers, specialists, and trainees within multinational companies.',
                 full_description: `The Intra-Company Transfer (ICT) permit is designed for multinational companies that need to temporarily transfer employees from non-European Union offices to their Italian branch, subsidiary, or affiliated entity. It provides a structured framework for internal mobility, allowing organizations to deploy key personnel while maintaining continuity across international operations.
 This type of permit is particularly relevant for companies operating globally, where the movement of managers, specialists, and trainees is essential to support business development, knowledge transfer, and organizational alignment.
@@ -94,7 +99,8 @@ By providing structured guidance and proactive management, we help organizations
                 id: 'service-agreement-assignments',
                 title: 'Service Agreement Assignments',
                 icon: 'FileText',
-                image: '/Pictures for MP/serviceagreements.jpg',
+                image: '/8.jpg',
+                landingImage: '/9.jpg',
                 short_description: 'Immigration compliance for foreign employees assigned to Italy under service agreements.',
                 full_description: `Service agreement assignments involve the temporary deployment of foreign workers to Italy within the framework of a contractual relationship between two companies. This structure is commonly used when an international company provides services to an Italian entity and requires its personnel to be physically present in Italy to fulfill contractual obligations.
 Unlike standard employment-based immigration, this model is based on a business-to-business agreement, where the worker remains employed by the sending company while operating in Italy for the duration of the service. As a result, these assignments require careful coordination between immigration regulations, labor law, and contractual obligations.
@@ -130,7 +136,8 @@ By combining legal awareness with practical experience, we help companies naviga
                 id: 'posted-worker-notification',
                 title: 'Posted Worker Notification',
                 icon: 'Bell',
-                image: '/Pictures for MP/postedworker.jpg',
+                image: '/10.jpg',
+                landingImage: '/11.jpg',
                 short_description: 'Manage mandatory notifications and compliance for workers posted to Italy.',
                 full_description: `Posted worker notification is a legal requirement for companies that temporarily assign employees to Italy while maintaining their employment contract in another country. This framework is governed by European Union directives on the posting of workers, which aim to ensure fair competition between companies and protect employee rights across Member States.
 Unlike standard immigration procedures, posting does not always involve a change of employer or long-term relocation. Instead, it applies to short- or medium-term assignments where employees remain on the payroll of the sending company but perform work in Italy for a limited period. Despite its temporary nature, the process is subject to strict regulatory requirements that must be carefully observed.
@@ -166,7 +173,8 @@ By guiding clients through each step of the process, we help reduce risks, ensur
                 id: 'large-scale-employee-relocation',
                 title: 'Large-Scale Employee Relocation',
                 icon: 'Globe',
-                image: '/Pictures for MP/largescalerelocation.jpg',
+                image: '/12.jpg',
+                landingImage: '/13.jpg',
                 short_description: 'Comprehensive mobility management for group moves and corporate restructuring.',
                 full_description: `Large-scale employee relocation involves the coordinated transfer of multiple employees to Italy within a defined timeframe, often as part of business expansion, project deployment, or organizational restructuring. Unlike individual relocations, these projects require a high level of planning, consistency, and operational control to ensure that all processes run smoothly and in alignment with business objectives.
 This type of relocation is not only an administrative exercise but a strategic initiative that directly impacts productivity, employee satisfaction, and the overall success of the company’s presence in Italy.
@@ -208,13 +216,15 @@ By acting as a central point of coordination, we help companies streamline opera
     {
         slug: 'visa-citizenship',
         title: 'Visa and Citizenship Assistance',
-        description: 'Comprehensive guidance for individuals seeking Italian visas or citizenship, managing every legal and administrative step with clarity and precision.',
+        description: 'Your road to Italy: visa and citizenship services.',
+        image: '/14.jpg',
         subServices: [
             {
                 id: 'elective-residence-visas',
                 title: 'Elective Residence Visas',
                 icon: 'Home',
-                image: '/Pictures for MP/electiveresidency.jpg',
+                image: '/15.jpg',
+                landingImage: '/16.jpg',
                 short_description: 'Enjoy the freedom to live in your chosen destination with an elective residence visa. Perfect for retirees and individuals with independent means.',
                 full_description: `The Elective Residence Visa is designed for non-European Union nationals who wish to reside in Italy without engaging in any form of employment or professional activity. It is particularly suited to financially independent individuals, retirees, or those with stable passive income who intend to establish long-term residence in the country.
 This visa provides a pathway for individuals seeking to experience life in Italy, offering access to residence rights while maintaining financial self-sufficiency. It is a popular option for those prioritizing lifestyle, culture, and stability over professional relocation.
@@ -246,7 +256,8 @@ By ensuring that all requirements are met with precision and clarity, we help cl
                 id: 'investor-entrepreneur-visas',
                 title: 'Investor and Entrepreneur Visas',
                 icon: 'TrendingUp',
-                image: '/Pictures for MP/investorvisa.jpg',
+                image: '/17.jpg',
+                landingImage: '/18.jpg',
                 short_description: 'Launch or expand your business internationally with our investor and entrepreneur visa services.',
                 full_description: `Italy offers dedicated visa pathways for individuals who intend to invest in the country or establish and manage business activities. These programs are designed to attract international capital, innovation, and entrepreneurial talent, providing a structured route to residency for those contributing to the Italian economy.
 Investor and entrepreneur visas are particularly relevant for high-net-worth individuals, business founders, and professionals seeking to expand their activities within Italy and the broader European market. Each pathway is governed by specific requirements and procedures, which must be carefully assessed to identify the most suitable option.
@@ -281,7 +292,8 @@ By combining immigration expertise with a strategic understanding of investment 
                 id: 'family-reunification-visas',
                 title: 'Family Reunification Visas',
                 icon: 'Users',
-                image: '/Pictures for MP/familyreunification.jpg',
+                image: '/19.jpg',
+                landingImage: '/20.jpg',
                 short_description: 'Reunite with your loved ones through our family reunification visa services.',
                 full_description: `The Family Reunification Visa allows non-European Union nationals legally residing in Italy to bring their close family members to join them. It is a fundamental pathway within Italian immigration law, aimed at preserving family unity and supporting the long-term integration of foreign residents.
 This visa is particularly relevant for employees, professionals, and residents who have established themselves in Italy and wish to ensure that their immediate family can live with them under a stable and legally recognized framework.
@@ -318,7 +330,8 @@ By ensuring that all requirements are met with precision and clarity, we help fa
                 id: 'digital-nomad-visas',
                 title: 'Digital Nomad Visas',
                 icon: 'Laptop',
-                image: '/Pictures for MP/digitalnomad.jpg',
+                image: '/21.jpg',
+                landingImage: '/22.jpg',
                 short_description: 'Work remotely from anywhere in the world with our digital nomad visa assistance.',
                 full_description: `The Digital Nomad Visa is designed for non-European Union nationals who wish to reside in Italy while working remotely for employers or clients based outside the country. It reflects the growing trend of location-independent work and offers a structured pathway for professionals seeking to combine international mobility with long-term residence in Italy.
 This visa is particularly suited to freelancers, remote employees, and independent professionals operating in sectors such as technology, consulting, design, and other digital or
@@ -355,7 +368,8 @@ By ensuring that all requirements are met accurately and efficiently, we help cl
                 id: 'study-permits',
                 title: 'Study Permits',
                 icon: 'GraduationCap',
-                image: '/Pictures for MP/studyvisa.jpg',
+                image: '/23.jpg',
+                landingImage: '/24.jpg',
                 short_description: 'Pursue your educational dreams abroad with our comprehensive study permit assistance.',
                 full_description: `Study permits allow non-European Union nationals to reside in Italy for educational purposes, including university programs, postgraduate studies, exchange programs, and professional training courses. Italy is home to a wide range of internationally recognized academic institutions, making it an attractive destination for students seeking both high-quality education and cultural experience.
 Obtaining a study permit involves a structured process that combines academic enrollment requirements with immigration procedures. Proper coordination between these elements is essential to ensure a smooth and timely transition.
@@ -391,7 +405,8 @@ By ensuring that each step is managed accurately and efficiently, we help studen
                 id: 'italian-citizenship',
                 title: 'Italian Citizenship assistance',
                 icon: 'Flag',
-                image: '/Pictures for MP/italiancitizenship.jpg',
+                image: '/25.jpg',
+                landingImage: '/26.jpg',
                 short_description: 'Claim your Italian heritage with our comprehensive citizenship services.',
                 full_description: `Italian citizenship offers a range of rights and opportunities, including the ability to live, work, and travel freely within the European Union. For many individuals, obtaining Italian citizenship represents not only a legal status but also a connection to heritage, family history, or long-term residence in Italy.
 The process can be complex and varies depending on the legal basis of the application. Each pathway is governed by specific requirements and procedures, making it essential to assess eligibility carefully and manage the process with precision.
@@ -432,13 +447,15 @@ By managing each step with precision and clarity, we help clients navigate compl
     {
         slug: 'international-taxation',
         title: 'International Taxation',
-        description: 'Strategic tax planning and compliance services for corporations and individuals navigating cross-border financial landscapes.',
+        description: 'Global taxes, local expertise',
+        image: '/27.jpg',
         subServices: [
             {
                 id: 'company-setup-tax-structuring',
                 title: 'Company Setup & Tax Structuring',
                 icon: 'Building2',
-                image: '/Pictures for MP/companysetup.jpg',
+                image: '/28.jpg',
+                landingImage: '/29.jpg',
                 short_description: 'Establish your business presence internationally with optimal tax structures.',
                 full_description: `Establishing a company in Italy requires a coordinated approach that combines legal incorporation with strategic tax planning. Company setup and tax structuring are not separate processes; rather, they form the foundation upon which a business operates, influencing everything from compliance obligations to financial efficiency and long-term growth.
 For international businesses entering the Italian market, this phase is particularly critical. It involves navigating a regulatory environment that includes corporate law, tax legislation, and administrative procedures, all of which must be aligned from the outset.
@@ -469,7 +486,8 @@ By combining technical expertise with a clear understanding of international bus
                 id: 'corporate-individual-tax-compliance',
                 title: 'Corporate & Individual Tax Compliance',
                 icon: 'FileCheck',
-                image: '/Pictures for MP/taxcompliance.jpg',
+                image: '/30.jpg',
+                landingImage: '/31.jpg',
                 short_description: 'Ensure full adherence to Italian and international tax regulations.',
                 full_description: `Tax compliance in Italy is a continuous and structured process that applies to both companies and individuals. It involves meeting a range of legal obligations, including registration, accounting, reporting, and the timely filing of tax returns. Ensuring compliance is essential not only to avoid penalties but also to maintain operational stability and transparency.
 For international clients, compliance can be particularly complex due to the interaction between Italian tax rules and those of other jurisdictions. A clear and well-managed approach is therefore essential.
@@ -505,7 +523,8 @@ By ensuring that all obligations are met accurately and on time, we help clients
                 id: 'tax-residency-relocation-planning',
                 title: 'Tax Residency & Relocation Planning',
                 icon: 'Map',
-                image: '/Pictures for MP/taxresidency.jpg',
+                image: '/32.jpg',
+                landingImage: '/33.jpg',
                 short_description: 'Pre-immigration tax strategies for high-net-worth individuals and expatriates.',
                 full_description: `Tax residency is a fundamental concept in determining how and where individuals and companies are taxed. For those relocating to Italy, understanding residency rules is essential, as it directly affects the scope of taxation, reporting obligations, and overall financial planning.
 Relocation is not only a physical move but also a fiscal transition. Without proper planning, individuals and businesses may face unexpected tax exposure or inefficiencies across multiple jurisdictions.
@@ -542,7 +561,8 @@ By combining technical expertise with a practical approach, we help individuals 
                 id: 'cross-border-taxation-double-tax-treaties',
                 title: 'Cross-Border Taxation & Double Tax Treaties',
                 icon: 'Globe',
-                image: '/Pictures for MP/crossbordertax.jpg',
+                image: '/34.jpg',
+                landingImage: '/35.jpg',
                 short_description: 'Optimize cross-border transactions and avoid double taxation.',
                 full_description: `Cross-border taxation arises when individuals or companies have economic activities, income, or assets in more than one country. In these situations, the same income may potentially be taxed in multiple jurisdictions, creating the risk of double taxation and increased administrative complexity.
 To address this, Italy has established an extensive network of double taxation treaties with numerous countries. These agreements provide a legal framework to allocate taxing rights between jurisdictions and prevent the same income from being taxed twice.
@@ -578,7 +598,8 @@ By providing clear guidance and coordinated support, we help clients manage inte
                 id: 'expat-global-mobility-tax',
                 title: 'Expat & Global Mobility Tax Services',
                 icon: 'Plane',
-                image: '/Pictures for MP/expattax.jpg',
+                image: '/36.jpg',
+                landingImage: '/37.jpg',
                 short_description: 'Tax planning and compliance for globally mobile employees.',
                 full_description: `International mobility creates complex tax scenarios for both employees and employers. When individuals relocate to Italy for work, they may become subject to tax obligations in multiple jurisdictions, requiring careful coordination to ensure compliance and avoid inefficiencies.
 Expat and global mobility tax services are designed to manage these complexities, supporting companies in transferring talent across borders while ensuring that employees understand and meet their fiscal obligations.
@@ -614,7 +635,8 @@ By combining technical expertise with a practical understanding of global mobili
                 id: 'tax-incentives-special-regimes',
                 title: 'Tax Incentives & Special Regimes',
                 icon: 'Star',
-                image: '/Pictures for MP/taxincentives.jpg',
+                image: '/38.jpg',
+                landingImage: '/39.jpg',
                 short_description: 'Leverage Italian tax incentives for new residents, researchers, and pensioners.',
                 full_description: `Italy offers a range of tax incentives and special regimes designed to attract international talent, investors, and businesses. These measures aim to enhance the country’s competitiveness by providing favorable tax treatment to individuals relocating to Italy and to companies investing or operating within its territory.
 When properly applied, these regimes can significantly reduce the overall tax burden. However, they are subject to specific eligibility criteria and procedural requirements, making careful assessment and planning essential.
@@ -650,13 +672,15 @@ By combining technical expertise with a strategic perspective, we help clients b
     {
         slug: 'document-procurement',
         title: 'Document Procurement & Ancestry Research',
-        description: 'Efficient retrieval of official Italian records and genealogical documents for legal, citizenship, or heritage purposes.',
+        description: 'Your family history, our services: documents and genealogy research.',
+        image: '/40.jpg',
         subServices: [
             {
                 id: 'italian-document-retrieval',
                 title: 'Italian Documents Retrieval',
                 icon: 'FileText',
-                image: '/Pictures for MP/documentretrival.jpg',
+                image: '/41.jpg',
+                landingImage: '/42.jpg',
                 short_description: 'Access vital Italian documents with our specialized retrieval services.',
                 full_description: `Obtaining official Italian documents is a fundamental step in many legal and administrative processes, including citizenship applications, family matters, and real estate transactions. These documents are typically issued and held by Italian municipalities (Comuni), state archives, or ecclesiastical institutions, and accessing them can be complex, particularly for individuals residing abroad.
 Italian document retrieval involves identifying, requesting, and obtaining certified records that are legally valid for use in Italy or internationally. Accuracy, completeness, and proper certification are essential, as these documents often form the basis of formal applications.
@@ -689,7 +713,8 @@ By handling each step with precision and efficiency, we help clients access esse
                 id: 'citizenship-eligibility-assessment',
                 title: 'Italian Citizenship Eligibility Assessment',
                 icon: 'Search',
-                image: '/Pictures for MP/cirizenshipassesemnt.jpg',
+                image: '/43.jpg',
+                landingImage: '/44.jpg',
                 short_description: 'Discover your eligibility for Italian citizenship with our comprehensive assessment service.',
                 full_description: `Assessing eligibility for Italian citizenship is a crucial first step before initiating any formal application. Italian citizenship law provides multiple pathways, including descent (jure sanguinis), marriage, and residency, each governed by specific legal criteria and procedural requirements.
 A thorough eligibility assessment ensures that applicants pursue the correct pathway and avoid unnecessary delays, rejections, or complications during the process. Given the complexity of Italian citizenship law, a structured and informed evaluation is essential.
@@ -725,7 +750,8 @@ By combining legal expertise with practical experience, we help clients move for
                 id: 'genealogical-research',
                 title: 'Genealogical Research',
                 icon: 'BookOpen',
-                image: '/Pictures for MP/Genealogical Research.jpg',
+                image: '/45.jpg',
+                landingImage: '/46.jpg',
                 short_description: 'Uncover your family\'s Italian roots with our professional genealogical research services.',
                 full_description: `Genealogical research is the process of tracing family history through historical records, archives, and official documentation. In the context of Italian citizenship, it plays a central role in establishing lineage and supporting applications based on descent (jure sanguinis).
 Beyond its legal function, genealogical research also provides a deeper understanding of family origins, migration patterns, and cultural heritage. It is both a technical and investigative process that requires accuracy, methodical analysis, and familiarity with historical sources.
@@ -762,7 +788,8 @@ By ensuring accuracy and completeness at every stage, we support clients in buil
                 id: 'translation-legalisation',
                 title: 'Translation and Legalisation',
                 icon: 'Globe',
-                image: '/Pictures for MP/translationandlegalization.jpg',
+                image: '/47.jpg',
+                landingImage: '/48.jpg',
                 short_description: 'Ensure your documents meet international standards with our translation and legalisation services.',
                 full_description: `In international legal and administrative processes, documents issued in one country must often be adapted to be recognized in another. In Italy, this requires not only accurate translation but also proper legalisation to confirm the authenticity and validity of foreign documents.
 Translation and legalisation are therefore essential steps in procedures such as immigration, citizenship applications, corporate matters, and real estate transactions. Ensuring that documents meet formal requirements is critical to avoid delays, rejections, or compliance issues.
@@ -798,14 +825,16 @@ By handling each step with accuracy and attention to detail, we help clients ens
     },
     {
         slug: 'real-estate',
-        title: 'Real Estate Services',
-        description: 'Full-service support for buying, leasing, or investing in Italian property, simplifying legal, regulatory, and transaction processes for local and international clients.',
+        title: 'Real estate services.',
+        description: 'Make Italy yours: trusted real estate guidance.',
+        image: '/49.jpg',
         subServices: [
             {
                 id: 'property-search-selection',
                 title: 'Property Search and Selection',
                 icon: 'MapPin',
-                image: '/Pictures for MP/propertysearch.jpg',
+                image: '/50.jpg',
+                landingImage: '/51.jpg',
                 short_description: 'Find your perfect property with our expert real estate search and selection services.',
                 full_description: `Identifying the right property in Italy requires more than access to listings. The real estate market is highly localized, with significant differences in pricing, legal frameworks, and property characteristics depending on the region, city, or even neighborhood. For international clients, navigating this landscape can be complex without local expertise and a structured approach.
 Property search and selection is therefore a strategic process aimed at identifying opportunities that align with the client’s objectives, whether related to relocation, lifestyle, or investment.
@@ -833,7 +862,8 @@ By approaching the search strategically, we ensure that the selected property me
                 id: 'lease-purchase-support',
                 title: 'Lease and Purchase Support',
                 icon: 'Key',
-                image: '/Pictures for MP/leaseandpurchase.jpg',
+                image: '/52.jpg',
+                landingImage: '/53.jpg',
                 short_description: 'Comprehensive support for negotiating and executing property transactions.',
                 full_description: `Leasing or purchasing property in Italy involves a structured process governed by legal, administrative, and financial requirements. For international clients, these procedures can be particularly complex due to unfamiliar regulations, language barriers, and local practices.
 Providing comprehensive lease and purchase support ensures that each phase of the transaction is managed efficiently, transparently, and in full compliance with Italian law. The objective is to guide clients through the process while safeguarding their interests at every stage.
@@ -869,7 +899,8 @@ By supporting clients at every stage, we help them navigate the Italian real est
                 id: 'contract-review',
                 title: 'Contract Review',
                 icon: 'FileCheck',
-                image: '/Pictures for MP/contract review.jpg',
+                image: '/54.jpg',
+                landingImage: '/55.jpg',
                 short_description: 'Protect your interests with our professional contract review services.',
                 full_description: `Real estate contracts in Italy are legally binding documents that define the rights, obligations, and responsibilities of the parties involved. Whether related to a lease or a purchase, these agreements often contain detailed clauses that can have significant legal and financial implications.
 For international clients, understanding these contracts can be challenging due to differences in legal systems, language, and local practices. A thorough contract review is therefore essential to ensure clarity, compliance, and protection before entering into any agreement.
@@ -903,7 +934,8 @@ By ensuring that contracts are transparent, compliant, and aligned with our clie
                 id: 'property-due-diligence',
                 title: 'Property Due Diligence',
                 icon: 'Shield',
-                image: '/Pictures for MP/duediligence.jpg',
+                image: '/56.jpg',
+                landingImage: '/57.jpg',
                 short_description: 'Comprehensive legal and technical checks prior to property acquisition.',
                 full_description: `Property due diligence is a critical phase in any real estate transaction in Italy. It involves a comprehensive verification of the legal, administrative, and technical aspects of a property before proceeding with a lease or purchase. This process is essential to ensure that the property is compliant with regulations and free from issues that could affect its value or usability.
 For international clients, due diligence provides a layer of security, offering clarity and confidence before making a financial commitment in an unfamiliar legal environment.
@@ -938,7 +970,8 @@ By managing due diligence with precision and attention to detail, we help client
                 id: 'negotiation-support',
                 title: 'Negotiation Support',
                 icon: 'MessageSquare',
-                image: '/Pictures for MP/negotiation.jpg',
+                image: '/58.jpg',
+                landingImage: '/59.jpg',
                 short_description: 'Expert representation in property negotiations to secure the best terms.',
                 full_description: `Negotiation is a central element of any real estate transaction, influencing not only the final price but also the contractual terms and overall conditions of the agreement. In the Italian
 
@@ -974,7 +1007,8 @@ By combining local expertise with a structured approach, we help clients navigat
                 id: 'property-management-assistance',
                 title: 'Property Management Assistance',
                 icon: 'Wrench',
-                image: '/Pictures for MP/propertymanagement.jpg',
+                image: '/60.jpg',
+                landingImage: '/61.jpg',
                 short_description: 'Ongoing support for maintaining and managing your Italian property.',
                 full_description: `Owning property in Italy often requires ongoing management, particularly for clients who are not permanently residing in the country. Property management assistance ensures that properties are maintained, compliant with local regulations, and efficiently operated over time.
 This service is especially relevant for international clients, investors, and individuals who use their property on a part-time basis. Effective management helps preserve the value of the asset while reducing the administrative and practical burden on the owner.
@@ -1010,7 +1044,8 @@ By offering reliable and structured support, we allow clients to enjoy the benef
                 id: 'investment-advisory',
                 title: 'Investment Advisory (for residential or income-generating properties)',
                 icon: 'TrendingUp',
-                image: '/Pictures for MP/investmentadvisory.jpg',
+                image: '/62.jpg',
+                landingImage: '/63.jpg',
                 short_description: 'Strategic guidance for maximizing returns on your Italian real estate investments.',
                 full_description: `Investing in real estate in Italy offers a range of opportunities, from residential properties for personal use to income-generating assets such as rental properties or hospitality investments. However, successful investment requires a clear strategy, an understanding of local market dynamics, and careful evaluation of legal and financial factors.
 Investment advisory services are designed to support clients in making informed decisions, ensuring that each investment aligns with their objectives, risk profile, and long-term plans.

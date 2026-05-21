@@ -6,7 +6,7 @@ export default function NewHeroSection() {
             {/* Background Image */}
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542820229-081e0c12af0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')" }}
+                style={{ backgroundImage: "url('/1.jpg')" }}
             >
                 <div className="absolute inset-0 bg-black/70"></div>
             </div>

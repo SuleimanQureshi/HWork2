@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowRight, ChevronRight } from 'lucide-react';
-import { HeroSection } from '../../components/HeroSection';
 import BookingForm from '../../components/BookingForm';
 import WhyChooseUs from '../../components/WhyChooseUs';
 import { ServiceCategory, SubService } from '../../data/serviceCategories';
@@ -75,8 +74,6 @@ export default function ServiceDetailPage({ category }: ServiceDetailPageProps) 
 
     return (
         <>
-            <HeroSection />
-
             <div id="service-content" className="min-h-screen bg-gray-50">
                 {/* Breadcrumb */}
                 <div className="max-w-7xl mx-auto px-4 pt-6 pb-2">

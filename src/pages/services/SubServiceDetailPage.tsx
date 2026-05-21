@@ -62,7 +62,7 @@ export default function SubServiceDetailPage() {
             {/* ── Hero Banner ── */}
             <div className="relative h-[55vh] min-h-[380px] overflow-hidden">
                 <img
-                    src={sub.image}
+                    src={sub.landingImage || sub.image}
                     alt={sub.title}
                     className="absolute inset-0 w-full h-full object-cover"
                 />

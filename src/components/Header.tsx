@@ -66,7 +66,7 @@ export default function Header() {
             justifyContent: 'space-evenly',
             alignItems: 'center',
           }}
-          className="px-2 overflow-hidden gap-1 xl:gap-2"
+          className="px-2 gap-1 xl:gap-2"
         >
           {/* Service Categories */}
           {serviceCategories.map((category) => (
@@ -76,7 +76,7 @@ export default function Header() {
             >
               <button
                 onClick={() => handleCategoryClick(category.slug)}
-                className="flex items-center justify-center gap-1 font-semibold text-red-900 hover:text-red-700 hover:bg-red-50 tracking-wide py-2 px-2 rounded transition-colors whitespace-nowrap"
+                className="flex items-center justify-center gap-1 font-semibold text-red-900 hover:text-red-700 hover:bg-red-50 tracking-wide py-2 px-2 rounded transition-colors text-center leading-tight"
                 style={{ fontSize: 'clamp(0.6rem, 1.05vw, 1rem)' }}
               >
                 {category.title}
@@ -101,7 +101,7 @@ export default function Header() {
           <Link
             to="/appointment"
             onClick={handleNavClick}
-            className="flex items-center justify-center gap-1 bg-brand-primary hover:bg-brand-deep transition-colors text-gray-900 font-semibold rounded-full shadow-lg whitespace-nowrap"
+            className="flex items-center justify-center gap-1 bg-brand-primary hover:bg-brand-deep transition-colors text-white font-semibold rounded-full shadow-lg whitespace-nowrap"
             style={{
               fontSize: 'clamp(0.6rem, 1.05vw, 1rem)',
               padding: 'clamp(0.4rem, 0.6vw, 0.625rem) clamp(0.75rem, 1.2vw, 1.25rem)',
@@ -151,7 +151,7 @@ export default function Header() {
             <Link
               to="/appointment"
               onClick={handleNavClick}
-              className="block w-full text-center bg-brand-primary hover:bg-brand-deep transition-opacity text-gray-900 font-semibold px-4 py-3 rounded-full mt-4"
+              className="block w-full text-center bg-brand-primary hover:bg-brand-deep transition-opacity text-white font-semibold px-4 py-3 rounded-full mt-4"
             >
               Contact us
             </Link>
