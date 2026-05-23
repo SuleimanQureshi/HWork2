@@ -92,9 +92,9 @@ export default function ServiceDetailPage({ category }: ServiceDetailPageProps) 
 
                 <div className="max-w-7xl mx-auto px-4 py-8">
                     {/* Page Header */}
-                    <div className="mb-10">
-                        <h1 className="text-4xl font-bold text-gray-800 mb-4">{category.title}</h1>
-                        <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">
+                    <div className="mb-10 flex flex-col items-center text-center">
+                        <h1 className="text-4xl font-bold text-red-800 mb-4">{category.title}</h1>
+                        <p className="text-xl text-red-800 max-w-3xl leading-relaxed">
                             {category.description}
                         </p>
                     </div>
