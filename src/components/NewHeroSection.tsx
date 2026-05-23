@@ -6,7 +6,7 @@ export default function NewHeroSection() {
             {/* Background Image */}
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: "url('/1.jpg')" }}
+                style={{ backgroundImage: "url('/Italian-Psprt.jpeg')" }}
             >
                 <div className="absolute inset-0 bg-black/70"></div>
             </div>
@@ -19,8 +19,8 @@ export default function NewHeroSection() {
                     className="max-w-4xl"
                 >
                     <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
-                        The leading Immigration <br className="hidden md:block" />
-                        & Citizenship Consultancy in Italy
+                        The Italian Immigration <br className="hidden md:block" />
+                        and Relocation Company
                     </h1>
 
                     {/* <p className="text-lg md:text-xl text-light-yellow mb-8 max-w-3xl font-medium">

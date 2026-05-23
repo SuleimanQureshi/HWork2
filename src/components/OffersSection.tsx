@@ -8,11 +8,11 @@ import { useEffect, useRef, useState } from 'react';
 //   { value: '100+', label: 'Complete project' },
 // ];
 const stats = [
-  { value: '15+', label: 'Years of Experience' },
-  { value: '500+', label: 'Clients Satisfied' },
-  { value: '1000+', label: 'Projects Completed' },
+  { value: '20+', label: 'Years of Experience' },
+  { value: '5000+', label: 'Clients Satisfied' },
+  { value: '10000+', label: 'Projects Completed' },
   { value: '30+', label: 'Countries Supported' },
-  { value: '50+', label: 'Companies Assisted' },
+  { value: '150+', label: 'Companies Assisted' },
   { value: '97%', label: 'Satisfaction Rate' },
 ];
 

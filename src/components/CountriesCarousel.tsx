@@ -37,7 +37,7 @@ const CountriesCarousel = () => {
       image: '/40.jpg?w=600&q=80',
     },
     {
-      title: 'Real estate services.',
+      title: 'Real estate services',
       description: 'Make Italy yours: trusted real estate guidance.',
       sectionId: 'real-estate-services',
       slug: 'real-estate',

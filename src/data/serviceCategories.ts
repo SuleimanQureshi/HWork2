@@ -825,7 +825,7 @@ By handling each step with accuracy and attention to detail, we help clients ens
     },
     {
         slug: 'real-estate',
-        title: 'Real estate services.',
+        title: 'Real estate services',
         description: 'Make Italy yours: trusted real estate guidance.',
         image: '/49.jpg',
         subServices: [

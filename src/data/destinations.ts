@@ -40,7 +40,7 @@ export const destinations: Destination[] = [
   {
     id: 5,
     name: '',
-    headline: 'Real estate services.',
+    headline: 'Real estate services',
     subheadline: 'Make Italy yours: trusted real estate guidance.',
     cta: 'Discover Real Estate',
     ctaLink: '/services/real-estate',
