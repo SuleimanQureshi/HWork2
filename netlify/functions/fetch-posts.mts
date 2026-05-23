@@ -51,7 +51,7 @@ function parseLinkedInPosts(xmlText: string) {
         if (title.length > 80) title = title.substring(0, 80) + '...';
 
         // Image
-        const imgMatch = card.match(/data-test-id="article-content"[\s\S]*?data-delayed-url="([^"]+)"/);
+        const imgMatch = card.match(/data-test-id="(?:article-content|feed-images-content)"[\s\S]*?data-delayed-url="([^"]+)"/);
         const rawImage = imgMatch?.[1] || '';
         const image = rawImage
             ? `https://images.weserv.nl/?url=${encodeURIComponent(rawImage)}`

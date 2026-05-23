@@ -71,7 +71,7 @@ export default function LinkedInPostsSimple(): JSX.Element {
         let title = titleEl?.textContent?.trim() || excerpt.split('.')[0] || 'LinkedIn Update';
         if (title.length > 80) title = title.substring(0, 80) + '...';
 
-        const articleImg = card.querySelector('[data-test-id="article-content"] img');
+        const articleImg = card.querySelector('[data-test-id="article-content"] img, [data-test-id="feed-images-content"] img');
         const rawImage = articleImg?.getAttribute('data-delayed-url') || '';
         const image = rawImage
           ? `https://images.weserv.nl/?url=${encodeURIComponent(rawImage)}`
