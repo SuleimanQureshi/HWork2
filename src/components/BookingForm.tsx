@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Compass, ArrowRight, Globe2 } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 export default function BookingForm() {
   const [userType, setUserType] = useState<'new' | 'returning'>('new');
@@ -23,24 +24,35 @@ export default function BookingForm() {
       window.location.href = 'https://mpimmigration.relocationonline.com/users/sign_in';
     } else {
       setStatus('submitting');
-      const form = e.currentTarget;
-      const formDataObj = new FormData(form);
-      formDataObj.append('form-name', 'booking');
-      
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formDataObj as any).toString()
-      })
-      .then(() => {
-        setStatus('success');
-        setFormData({ clientType: '', firstName: '', lastName: '', areaCode: '', contactNumber: '', email: '', countryOfOrigin: '', querySubject: '', message: '' });
-        setTimeout(() => setStatus('idle'), 5000); // Reset after 5 seconds
-      })
-      .catch((error) => {
-        console.error('Error submitting form:', error);
-        setStatus('error');
-      });
+
+      const templateParams = {
+        clientType: formData.clientType,
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        areaCode: formData.areaCode,
+        contactNumber: formData.contactNumber,
+        email: formData.email,
+        countryOfOrigin: formData.countryOfOrigin,
+        querySubject: formData.querySubject,
+        message: formData.message,
+      };
+
+      // STEP 3: Replace these three strings with the actual IDs from your EmailJS dashboard
+      emailjs.send(
+        'service_vj8op36',
+        'template_phtxzgw',
+        templateParams,
+        'UGEX3MIIkWbGiOr9o'
+      )
+        .then(() => {
+          setStatus('success');
+          setFormData({ clientType: '', firstName: '', lastName: '', areaCode: '', contactNumber: '', email: '', countryOfOrigin: '', querySubject: '', message: '' });
+          setTimeout(() => setStatus('idle'), 5000); // Reset after 5 seconds
+        })
+        .catch((error) => {
+          console.error('Error submitting form:', error);
+          setStatus('error');
+        });
     }
   };
 
