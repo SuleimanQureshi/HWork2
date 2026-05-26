@@ -15,12 +15,32 @@ export default function BookingForm() {
     message: ''
   });
 
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (userType === 'returning') {
       window.location.href = 'https://mpimmigration.relocationonline.com/users/sign_in';
     } else {
-      console.log('Form submitted:', formData);
+      setStatus('submitting');
+      const form = e.currentTarget;
+      const formDataObj = new FormData(form);
+      formDataObj.append('form-name', 'booking');
+      
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formDataObj as any).toString()
+      })
+      .then(() => {
+        setStatus('success');
+        setFormData({ clientType: '', firstName: '', lastName: '', areaCode: '', contactNumber: '', email: '', countryOfOrigin: '', querySubject: '', message: '' });
+        setTimeout(() => setStatus('idle'), 5000); // Reset after 5 seconds
+      })
+      .catch((error) => {
+        console.error('Error submitting form:', error);
+        setStatus('error');
+      });
     }
   };
 
@@ -396,10 +416,20 @@ export default function BookingForm() {
                   </div>
 
                   <div className="bk-submit-wrap">
-                    <button type="submit" className="bk-submit">
-                      Submit Inquiry <ArrowRight size={17} />
+                    <button type="submit" className="bk-submit" disabled={status === 'submitting'}>
+                      {status === 'submitting' ? 'Submitting...' : 'Submit Inquiry'} <ArrowRight size={17} />
                     </button>
                   </div>
+                  {status === 'success' && (
+                    <div style={{ marginTop: '15px', color: '#4caf50', textAlign: 'center', fontWeight: 'bold' }}>
+                      Thank you! Your inquiry has been sent successfully.
+                    </div>
+                  )}
+                  {status === 'error' && (
+                    <div style={{ marginTop: '15px', color: '#f44336', textAlign: 'center', fontWeight: 'bold' }}>
+                      Oops! There was an error submitting your inquiry. Please try again later.
+                    </div>
+                  )}
                 </>
               ) : (
                 <div className="bk-portal">

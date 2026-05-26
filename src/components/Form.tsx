@@ -15,12 +15,32 @@ export default function Form() {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (userType === 'returning') {
       window.location.href = 'https://mpimmigration.relocationonline.com/users/sign_in';
     } else {
-      console.log('Form submitted:', formData);
+      setStatus('submitting');
+      const form = e.currentTarget;
+      const formDataObj = new FormData(form);
+      formDataObj.append('form-name', 'booking');
+      
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formDataObj as any).toString()
+      })
+      .then(() => {
+        setStatus('success');
+        setFormData({ clientType: '', firstName: '', lastName: '', areaCode: '', contactNumber: '', email: '', countryOfOrigin: '', querySubject: '', message: '' });
+        setTimeout(() => setStatus('idle'), 5000); // Reset after 5 seconds
+      })
+      .catch((error) => {
+        console.error('Error submitting form:', error);
+        setStatus('error');
+      });
     }
   };
 
@@ -247,10 +267,21 @@ export default function Form() {
 
                 <button
                   type="submit"
-                  className="w-full bg-brand-primary text-white font-semibold py-4 px-6 rounded-lg hover:bg-[#6B0F2A] transition-colors duration-300 shadow-lg hover:shadow-xl"
+                  disabled={status === 'submitting'}
+                  className="w-full bg-brand-primary text-white font-semibold py-4 px-6 rounded-lg hover:bg-[#6B0F2A] transition-colors duration-300 shadow-lg hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  Submit Inquiry
+                  {status === 'submitting' ? 'Submitting...' : 'Submit Inquiry'}
                 </button>
+                {status === 'success' && (
+                  <div className="mt-4 p-4 bg-green-50 text-green-700 rounded-lg text-center font-medium">
+                    Thank you! Your inquiry has been sent successfully.
+                  </div>
+                )}
+                {status === 'error' && (
+                  <div className="mt-4 p-4 bg-red-50 text-red-700 rounded-lg text-center font-medium">
+                    Oops! There was an error submitting your inquiry. Please try again later.
+                  </div>
+                )}
               </>
             ) : (
               <>
