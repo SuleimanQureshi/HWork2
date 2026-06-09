@@ -50,7 +50,7 @@ export default function ServicesPage() {
                 <div className="max-w-7xl mx-auto px-4 py-8">
                     <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Services</h1>
                     <p className="text-lg text-gray-600 max-w-3xl leading-relaxed mb-12">
-                        Comprehensive immigration, legal, and real estate services tailored to your needs in Italy.
+                        Comprehensive immigration, legal, and real estate services tailored to your needs in Italy
                     </p>
 
                     <div className="space-y-20">

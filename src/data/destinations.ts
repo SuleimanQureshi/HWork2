@@ -23,7 +23,7 @@ export const destinations: Destination[] = [
     id: 3,
     name: '',
     headline: 'Visa and Citizenship Assistance',
-    subheadline: 'Your road to Italy: visa and citizenship services.',
+    subheadline: 'Enjoy the freedom to live in your chosen destination with an elective residence visa.',
     cta: 'View Visa Options',
     ctaLink: '/services/visa-citizenship',
     imageUrl: '/14.jpg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop'

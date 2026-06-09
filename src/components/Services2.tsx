@@ -3,7 +3,7 @@ import RotatingCircle from './RotatingCircle';
 
 export default function Services2() {
   return (
-          <div className="min-h-screen bg-[#f5f5f0] flex items-center justify-center px-4 py-12">
+    <div className="min-h-screen bg-[#f5f5f0] flex items-center justify-center px-4 py-12">
       <div className="max-w-5xl mx-auto">
         <section className="space-y-12">
           <div>
@@ -30,7 +30,7 @@ export default function Services2() {
 
           <div>
             <h2 className="text-[32px] font-bold text-brand-primary mb-4">
-              2. Visas and Citizenship Assistance
+              2. Visa and Citizenship Assistance
             </h2>
             <ul className="mb-6">
               <li className="flex items-start mb-4">
@@ -136,7 +136,7 @@ export default function Services2() {
             <ul className="mb-6">
               <li className="flex items-start mb-4">
                 <span className="inline-block w-2 h-2 bg-black rounded-full mt-2.5 mr-3 flex-shrink-0"></span>
-                <span className="text-[19px] font-semibold text-black">Property Search and Selection</span>
+                <span className="text-[19px] font-semibold text-black">Property Search</span>
               </li>
             </ul>
             <p className="text-[17px] leading-[1.65] text-black mb-8">
@@ -191,5 +191,5 @@ export default function Services2() {
         </section>
       </div>
     </div>
-     );
+  );
 }

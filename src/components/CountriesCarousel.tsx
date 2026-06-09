@@ -24,7 +24,7 @@ const CountriesCarousel = () => {
     },
     {
       title: 'Visa and Citizenship Assistance',
-      description: 'Your road to Italy: visa and citizenship services.',
+      description: 'Enjoy the freedom to live in your chosen destination with an elective residence visa.',
       sectionId: 'visa-citizenship-assistance',
       slug: 'visa-citizenship',
       image: '/14.jpg?w=600&q=80',
