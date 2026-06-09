@@ -60,7 +60,10 @@ export default function Footer() {
               <p className="text-white/80">
                 <span className="font-semibold text-white">Tel: </span>
                 <a href="tel:+390254123890" className="hover:text-white transition-colors duration-300">
-                  02 5412 3890
+                  +39 025 4123890
+                </a>
+                <a href="tel:+390519988966" className="hover:text-white transition-colors duration-300">
+                  +39 051 9988966
                 </a>
               </p>
             </div>

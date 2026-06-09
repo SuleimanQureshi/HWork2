@@ -371,8 +371,8 @@ export default function BookingForm() {
                   <div className="bk-sel-wrap">
                     <select name="clientType" value={formData.clientType} onChange={handleChange} required className="bk-select">
                       <option value="">Select Client Type</option>
-                      <option value="business">Business</option>
-                      <option value="individual">Individual</option>
+                      <option value="business">Corporate</option>
+                      <option value="individual">Private</option>
                     </select>
                     <span className="bk-chevron">{chevron}</span>
                   </div>

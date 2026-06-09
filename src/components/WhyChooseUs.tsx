@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
                     className="text-center"
                 >
                     <p className="text-xl md:text-2xl font-semibold text-brand-primary bg-white rounded-2xl p-6 shadow-md inline-block">
-                        One team, complete solutions—from visas and permits to finding your home and settling in.
+                        One team, complete solutions—from visas and permits to finding your home and settling in
                     </p>
                 </motion.div>
             </div>

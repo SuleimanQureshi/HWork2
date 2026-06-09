@@ -12,8 +12,8 @@ const stats = [
   { value: '5000+', label: 'Clients Satisfied' },
   { value: '10000+', label: 'Projects Completed' },
   { value: '30+', label: 'Countries Supported' },
-  { value: '150+', label: 'Companies Assisted' },
-  { value: '97%', label: 'Satisfaction Rate' },
+  { value: '500+', label: 'Companies Assisted' },
+  { value: '98%', label: 'Satisfaction Rate' },
 ];
 
 export default function OffersSection() {

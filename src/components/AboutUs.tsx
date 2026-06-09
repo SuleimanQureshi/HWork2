@@ -19,7 +19,7 @@ export default function AboutUs() {
                         </h2>
                     </div>
 
-                    <div className="space-y-4 text-left text-lg md:text-xl text-purple leading-relaxed mx-auto">
+                    <div className="space-y-4 text-justify text-lg md:text-xl text-purple leading-relaxed mx-auto">
                         <p>
                             With over 20 years of experience, MP Immigration is a trusted Italian consulting firm specializing in immigration and global mobility services. We support international companies, organizations, and private clients in navigating the complexities of relocating to Italy with confidence and ease.
                         </p>

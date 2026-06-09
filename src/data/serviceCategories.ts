@@ -171,7 +171,7 @@ By guiding clients through each step of the process, we help reduce risks, ensur
             },
             {
                 id: 'large-scale-employee-relocation',
-                title: 'Large-Scale Employee Relocation',
+                title: 'Group Moves',
                 icon: 'Globe',
                 image: '/12.jpg',
                 landingImage: '/13.jpg',

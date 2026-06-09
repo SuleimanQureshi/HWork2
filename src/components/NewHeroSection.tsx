@@ -6,7 +6,7 @@ export default function NewHeroSection() {
             {/* Background Image */}
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: "url('/Italian-Psprt.jpeg')" }}
+                style={{ backgroundImage: "url('/1.jpg')" }}
             >
                 <div className="absolute inset-0 bg-black/70"></div>
             </div>
