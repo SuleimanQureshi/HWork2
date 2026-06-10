@@ -224,7 +224,7 @@ By acting as a central point of coordination, we help companies streamline opera
                 title: 'Elective Residence Visa',
                 icon: 'Home',
                 image: '/15.jpg',
-                landingImage: '/16.jpg',
+                landingImage: '/14.jpg',
                 short_description: 'Enjoy the freedom to live in your chosen destination with an elective residence visa. Perfect for retirees and individuals with independent means',
                 full_description: `The Elective Residence Visa is designed for non-European Union nationals who wish to reside in Italy without engaging in any form of employment or professional activity. It is particularly suited to financially independent individuals, retirees, or those with stable passive income who intend to establish long-term residence in the country.
 This visa provides a pathway for individuals seeking to experience life in Italy, offering access to residence rights while maintaining financial self-sufficiency. It is a popular option for those prioritizing lifestyle, culture, and stability over professional relocation.
@@ -257,7 +257,7 @@ By ensuring that all requirements are met with precision and clarity, we help cl
                 title: 'Investor and Entrepreneur Visa',
                 icon: 'TrendingUp',
                 image: '/17.jpg',
-                landingImage: '/18.jpg',
+                landingImage: '/17.jpg',
                 short_description: 'Launch or expand your business internationally with our investor and entrepreneur visa services',
                 full_description: `Italy offers dedicated visa pathways for individuals who intend to invest in the country or establish and manage business activities. These programs are designed to attract international capital, innovation, and entrepreneurial talent, providing a structured route to residency for those contributing to the Italian economy.
 Investor and entrepreneur visas are particularly relevant for high-net-worth individuals, business founders, and professionals seeking to expand their activities within Italy and the broader European market. Each pathway is governed by specific requirements and procedures, which must be carefully assessed to identify the most suitable option.
@@ -293,7 +293,7 @@ By combining immigration expertise with a strategic understanding of investment 
                 title: 'Family Reunification Visa',
                 icon: 'Users',
                 image: '/19.jpg',
-                landingImage: '/20.jpg',
+                landingImage: '/18.jpg',
                 short_description: 'Reunite with your loved ones through our family reunification visa services',
                 full_description: `The Family Reunification Visa allows non-European Union nationals legally residing in Italy to bring their close family members to join them. It is a fundamental pathway within Italian immigration law, aimed at preserving family unity and supporting the long-term integration of foreign residents.
 This visa is particularly relevant for employees, professionals, and residents who have established themselves in Italy and wish to ensure that their immediate family can live with them under a stable and legally recognized framework.
@@ -331,7 +331,7 @@ By ensuring that all requirements are met with precision and clarity, we help fa
                 title: 'Digital Nomad Visa',
                 icon: 'Laptop',
                 image: '/21.jpg',
-                landingImage: '/22.jpg',
+                landingImage: '/20.jpg',
                 short_description: 'Work remotely from anywhere in the world with our digital nomad visa assistance',
                 full_description: `The Digital Nomad Visa is designed for non-European Union nationals who wish to reside in Italy while working remotely for employers or clients based outside the country. It reflects the growing trend of location-independent work and offers a structured pathway for professionals seeking to combine international mobility with long-term residence in Italy.
 This visa is particularly suited to freelancers, remote employees, and independent professionals operating in sectors such as technology, consulting, design, and other digital or
