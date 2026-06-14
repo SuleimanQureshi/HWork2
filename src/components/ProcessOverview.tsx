@@ -9,7 +9,7 @@ const ProcessOverview = () => {
     },
     {
       number: '02',
-      title: 'International Access Visas',
+      title: 'International Access Visa',
       description: 'Lorem Ipsum is simply dummy text the printing and typeser',
     },
     {

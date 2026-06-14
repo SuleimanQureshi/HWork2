@@ -241,7 +241,7 @@ export default function Form() {
                     className="w-full px-4 py-3 border-2 border-brand-primary rounded-lg bg-white text-gray-900 appearance-none focus:outline-none focus:ring-2 focus:ring-[#8B1538] focus:border-transparent transition-all cursor-pointer"
                   >
                     <option value="">Query Subject</option>
-                    <option value="visas">Visas</option>
+                    <option value="visas">Visa</option>
                     <option value="relocation">Relocation</option>
                     <option value="real-estate">Real Estate</option>
                     <option value="international-taxation">International Taxation</option>

@@ -62,6 +62,9 @@ export default function Footer() {
                 <a href="tel:+390254123890" className="hover:text-white transition-colors duration-300">
                   +39 025 4123890
                 </a>
+              </p>
+              <p className="text-white/80">
+                <span className="font-semibold text-white">Tel: </span>
                 <a href="tel:+390519988966" className="hover:text-white transition-colors duration-300">
                   +39 051 9988966
                 </a>
@@ -73,7 +76,9 @@ export default function Footer() {
             <div className="flex gap-3">
               {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/company/mp-immigration-srl/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 className="w-10 h-10 rounded flex items-center justify-center transition-all duration-300 hover:scale-110"
                 style={{ backgroundColor: '#0A66C2' }}
@@ -82,7 +87,9 @@ export default function Footer() {
               </a>
               {/* Instagram */}
               <a
-                href="#"
+                href="https://www.instagram.com/mpimmigrationitaly/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="w-10 h-10 rounded flex items-center justify-center transition-all duration-300 hover:scale-110"
                 style={{ background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)' }}
