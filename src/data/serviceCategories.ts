@@ -20,7 +20,7 @@ export const serviceCategories: ServiceCategory[] = [
     {
         slug: 'corporate-immigration',
         title: 'Corporate Immigration & Relocation',
-        description: 'Moving people, growing businesses; your partner in global mobility',
+        description: 'Moving People. Growing businesses: your Partner in Global Mobility',
         image: '/3.jpg',
         subServices: [
             {
@@ -63,13 +63,13 @@ By ensuring that each step is handled with precision and in line with current le
                 icon: 'Users',
                 image: '/6.jpg',
                 landingImage: '/7.jpg',
-                short_description: 'Seamless relocation of managers, specialists, and trainees within multinational companies',
+                short_description: 'Seamless relocation of managers, highly specialized personnel, and trainees within multinational companies',
                 full_description: `The Intra-Company Transfer (ICT) permit is designed for multinational companies that need to temporarily transfer employees from non-European Union offices to their Italian branch, subsidiary, or affiliated entity. It provides a structured framework for internal mobility, allowing organizations to deploy key personnel while maintaining continuity across international operations.
-This type of permit is particularly relevant for companies operating globally, where the movement of managers, specialists, and trainees is essential to support business development, knowledge transfer, and organizational alignment.
+This type of permit is particularly relevant for companies operating globally, where the movement of managers, highly specialized personnel, and trainees is essential to support business development, knowledge transfer, and organizational alignment.
 
 Eligible Profiles
 
-The ICT permit applies to three main categories of employees: managers, specialists, and trainees. Managers are typically responsible for directing the organization or a specific department, while specialists possess advanced knowledge essential to the company’s activities, products, or services. Trainees, on the other hand, are employees undergoing professional development within the organization.
+The ICT permit applies to three main categories of employees: managers, highly specialized personnel, and trainees. Managers are typically responsible for directing the organization or a specific department, while highly specialized personnel possess advanced knowledge essential to the company’s activities, products, or services. Trainees, on the other hand, are employees undergoing professional development within the organization.
 Applicants must have been employed by the sending company for a minimum period prior to the transfer, as defined by current regulations. The receiving entity in Italy must be part of the same corporate group, and the transfer must be temporary in nature, with a defined duration and purpose.
 Application Process
 
@@ -78,7 +78,7 @@ Once authorization is granted, the employee applies for a visa at the Italian co
 Given the technical nature of the process, accuracy in documentation and consistency across all submitted materials are essential to avoid delays or complications.
 Duration and Conditions
 
-The ICT permit is issued for a limited period, which varies depending on the employee’s role. Managers and specialists are typically granted longer durations than trainees, reflecting the different nature of their assignments.
+The ICT permit is issued for a limited period, which varies depending on the employee’s role. Managers and highly specialized personnel are typically granted longer durations than trainees, reflecting the different nature of their assignments.
 
 The permit is tied to the specific assignment and cannot generally be converted into other types of work permits while in Italy. However, it allows employees to remain within the corporate structure of the multinational group, maintaining their contractual relationship with the sending entity.
 Working conditions must comply with Italian labor standards, including salary levels and workplace protections, ensuring that transferred employees are treated in line with local regulations.

@@ -21,10 +21,10 @@ export default function AboutUs() {
 
                     <div className="space-y-4 text-justify text-lg md:text-xl text-purple leading-relaxed mx-auto">
                         <p>
-                            With over 20 years of experience, MP Immigration is a trusted Italian consulting firm specializing in immigration and global mobility services. We support international companies, organizations, and private clients in navigating the complexities of relocating to Italy with confidence and ease.
+                            With over 20 years of experience, MP Immigration is a trusted Italian consulting firm specializing in Immigration and Global Mobility. We support multinational companies, organizations, and private clients in navigating the complexities of relocating to Italy with confidence and ease.
                         </p>
                         <p>
-                            From visa applications and residency permits to tax advisory, real estate assistance, and citizenship processes, we offer a comprehensive, end-to-end service tailored to each client’s needs. Our expertise also extends to genealogical research, helping individuals trace their Italian heritage and obtain citizenship by descent.
+                            From visa applications and residency permits to tax advisory, real estate assistance, and citizenship processes, we offer a comprehensive, end-to-end service tailored to each client’s needs. Our expertise also extends to genealogical research, helping individuals trace their Italian heritage and obtain citizenship.
                         </p>
                         <p>
                             At MP Immigration, we combine in-depth regulatory knowledge with a highly personalized approach, ensuring every step of the journey is efficient, compliant, and stress-free. Whether you are moving to Italy for work, investment, or personal reasons, we are here to guide you every step of the way.

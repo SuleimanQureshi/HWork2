@@ -18,12 +18,11 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col gap-1.5 text-white/80 text-xs leading-relaxed">
-              <p><span className="font-semibold text-white">Partita IVA:</span> 07497690961</p>
-              <p><span className="font-semibold text-white">European VAT:</span> IT07497690961</p>
+              <p><span className="font-semibold text-white">VAT nr.</span> 07497690961</p>
               <p><span className="font-semibold text-white">PEC:</span> mpimmigration@legalmail.it</p>
               <p className="leading-snug">
                 <span className="font-semibold text-white">Registered Office:</span> Via Pattari, 6 - 20122 Milano (MI) P.IVA - C.F. e Registro Imprese di Milano n° 07497690961
-              </p>
+              </p>IT
               <p><span className="font-semibold text-white">Cap. Soc.:</span> € 10.000 I.V.</p>
               <p><span className="font-semibold text-white">REA n°:</span> 1962745</p>
             </div>
@@ -42,7 +41,7 @@ export default function Footer() {
           <div className="flex flex-col items-center text-center">
             <h4 className="text-xl font-bold mb-6">Our Offices</h4>
             <div className="flex flex-col gap-4 text-white/80 text-sm">
-              <p className="leading-relaxed">Via Pattari, 6, 20122 Milano MI<br />(Headquarters)</p>
+              <p className="leading-relaxed">Via Paolo Andreani, 6 20122 Milan<br />(Headquarters)</p>
               <p className="leading-relaxed">Via Santo Stefano, 166, 40125 Bologna BO</p>
             </div>
           </div>
@@ -60,7 +59,7 @@ export default function Footer() {
               <p className="text-white/80">
                 <span className="font-semibold text-white">Tel: </span>
                 <a href="tel:+390254123890" className="hover:text-white transition-colors duration-300">
-                  +39 025 4123890
+                  +39 02 54123890
                 </a>
               </p>
               <p className="text-white/80">

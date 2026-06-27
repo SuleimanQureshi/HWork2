@@ -17,7 +17,7 @@ const CountriesCarousel = () => {
   const visaOptions: VisaOption[] = [
     {
       title: 'Corporate Immigration & Relocation',
-      description: 'Moving people, growing businesses; your partner in global mobility.',
+      description: 'Moving People. Growing businesses: your Partner in Global Mobility.',
       sectionId: 'corporate-immigration',
       slug: 'corporate-immigration',
       image: '/3.jpg?w=600&q=80',

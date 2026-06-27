@@ -14,7 +14,7 @@ export const destinations: Destination[] = [
     id: 2,
     name: '',
     headline: 'Corporate Immigration & Relocation',
-    subheadline: 'Moving people, growing businesses; your partner in global mobility.',
+    subheadline: 'Moving People. Growing businesses: your Partner in Global Mobility',
     cta: 'Explore Work Permits',
     ctaLink: '/services/corporate-immigration',
     imageUrl: '/3.jpg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop&crop=top'
