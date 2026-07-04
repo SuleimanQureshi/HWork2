@@ -18,7 +18,7 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col gap-1.5 text-white/80 text-xs leading-relaxed">
-              <p><span className="font-semibold text-white">VAT nr.</span> 07497690961</p>
+              <p><span className="font-semibold text-white">P. IVA / VAT No.:</span> 07497690961</p>
               <p><span className="font-semibold text-white">PEC:</span> mpimmigration@legalmail.it</p>
               <p className="leading-snug">
                 <span className="font-semibold text-white">Registered Office:</span> Via Pattari, 6 - 20122 Milano (MI) P.IVA - C.F. e Registro Imprese di Milano n° 07497690961

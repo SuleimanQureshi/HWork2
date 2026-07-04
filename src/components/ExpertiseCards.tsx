@@ -45,7 +45,7 @@ const cards = [
                 <line x1="13" y1="37" x2="35" y2="37" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
             </svg>
         ),
-        text: "We rely on a unique and well-established partner network, including legal, tax, and real estate professionals, allowing us to offer fully integrated and multidisciplinary support.",
+        text: "We rely on a unique and well-established partner network including legal, tax, and real estate professionals, allowing us to offer fully integrated and multidisciplinary support.",
     },
     {
         title: "Our Excellence",
