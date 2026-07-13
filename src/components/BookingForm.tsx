@@ -39,10 +39,10 @@ export default function BookingForm() {
 
       // STEP 3: Replace these three strings with the actual IDs from your EmailJS dashboard
       emailjs.send(
-        'service_vj8op36',
-        'template_phtxzgw',
+        'service_yt7s7o8',
+        'template_b4xz868',
         templateParams,
-        'UGEX3MIIkWbGiOr9o'
+        'y5yyWzJozmpF495vK'
       )
         .then(() => {
           setStatus('success');
